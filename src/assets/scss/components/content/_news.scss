@@ -1,0 +1,373 @@
+.sl {
+    &-news {
+        position: relative;
+
+        .pagination {
+            margin: 40px 0 0;
+        }
+
+        &-inn {
+            @include mqSp {
+                padding-top: 50px;
+            }
+
+            .breadcrumbs {
+                width: 90%;
+                max-width: 1080px;
+                margin: 40px auto 80px;
+                padding-left: 20px;
+
+                @include mqSp {
+                    padding-left: 0;
+                    margin: 10px auto 20px;
+                }
+            }
+
+            &-posts {
+                max-width: 965px;
+                width: 90%;
+                margin: 0 auto 130px;
+                padding-top: 80px;
+
+                @media screen and (max-width: 1300px) {
+                    width: 80%;
+                }
+
+                @include mqSp {
+                    width: 90%;
+                    padding-top: 40px;
+                    margin: 0 auto 80px;
+                }
+
+                article {
+                    margin-bottom: 85px;
+
+                    @include mqSp {
+                        margin-bottom: 40px;
+                    }
+
+                    a {
+                        justify-content: space-between;
+
+                        &:hover {
+                            .image {
+                                img {
+                                    transform: scale(1.15);
+                                    -webkit-transform: scale(1.15);
+                                    -moz-transform: scale(1.15);
+                                    -ms-transform: scale(1.15);
+                                    -o-transform: scale(1.15);
+                                }
+                            }
+                        }
+                    }
+
+                    .image {
+                        max-width: 244px;
+                        width: 25.286%;
+                        box-shadow: 5px 5px 0 #696a6c;
+                        overflow: hidden;
+
+                        img {
+                            transition: all .3s;
+                            -webkit-transition: all .3s;
+                            -moz-transition: all .3s;
+                            -ms-transition: all .3s;
+                            -o-transition: all .3s;
+                            height: 249px;
+                            object-fit: cover;
+
+                            @include mqSp() {
+                                height: 149px;
+                            }
+                        }
+
+                        @include mqSp {
+                            width: 43.4%;
+                            box-shadow: 3px 3px 0 #696a6c;
+                        }
+                    }
+
+                    .content {
+                        width: 72%;
+
+                        @include mqSp {
+                            width: 53%;
+                        }
+
+                        time {
+                            font-size: 18px;
+                            font-size: 1.8rem;
+                            line-height: 1;
+                            color: #696a6c;
+                            letter-spacing: 0.075em;
+                            font-family: "Helvetica", sans-serif;
+                            font-weight: 400;
+                            padding-bottom: 20px;
+                            margin-bottom: 12px;
+                            border-bottom: 1px solid #696a6c;
+                            display: block;
+                            font-weight: bold;
+
+                            @include mqSp {
+                                position: relative;
+                                font-size: 12px;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                padding-bottom: 10px;
+                                margin-bottom: 10px;
+                                border-bottom: unset;
+                            }
+
+                            &::after {
+                                @include mqSp() {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0px;
+                                    left: 0px;
+                                    width: 150%;
+                                    border-bottom: 1px solid #696a6c;
+                                }
+                            }
+                        }
+
+                        h2 {
+                            font-size: 18px;
+                            font-size: 1.8rem;
+                            color: #696a6c;
+                            letter-spacing: 0.075em;
+                            line-height: 2;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            font-weight: 400;
+                            font-family: "hiragino-kaku-gothic-pro", sans-serif;
+
+                            // font-family: "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN", YuGothic, "メイリオ", Meiryo, sans-serif;
+                            @include mqSp {
+                                font-size: 11px;
+                                font-size: 1.1rem;
+                                line-height: 1.9;
+                                -webkit-line-clamp: 4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-detail {
+                width: 90%;
+                max-width: 1080px;
+                margin: 55px auto 0;
+
+                @include mqSp {
+                    margin: 30px auto 0;
+                }
+
+                .image {
+                    width: 100%;
+                    border: 1px solid #696a6c;
+                    text-align: center;
+                    position: relative;
+                    max-height: 590px;
+                    height: 45vw;
+
+                    @media screen and (max-width: 1300px) {
+                        width: 90%;
+                        margin: auto;
+                    }
+
+                    @include mqSp() {
+                        width: 100%;
+                        height: 75vw;
+                    }
+
+                    &:after {
+                        content: "";
+                        width: 98%;
+                        position: absolute;
+                        left: 1%;
+                        bottom: -14px;
+                        border-bottom: 13px solid #696a6c;
+                        z-index: -1;
+
+                        @include mqSp {
+                            border-bottom: 7px solid #696a6c;
+                            bottom: -7px;
+                        }
+                    }
+
+                    img {
+                        max-width: 100%;
+                        height: 100%;
+                        width: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                .content {
+                    padding: 70px 50px 40px;
+                    box-sizing: border-box;
+
+                    @include mqSp {
+                        padding: 30px 0 0;
+                    }
+
+                    .ttl-time {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin-bottom: 60px;
+
+                        @include mqSp {
+                            display: block;
+                            margin-bottom: 0;
+                        }
+
+                        time {
+                            font-size: 23px;
+                            line-height: 1;
+                            color: #696a6c;
+                            letter-spacing: 0.075em;
+                            font-family: "Helvetica", sans-serif;
+                            font-weight: 600;
+                            margin-right: 3%;
+
+                            @include mqSp {
+                                margin-right: 0;
+                                font-size: 1.1rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 25px;
+                            font-size: 2.5rem;
+                            color: #696a6c;
+                            letter-spacing: 0.075em;
+                            line-height: 2;
+                            padding: 20px 0 20px 3%;
+                            border-left: 2px solid #696a6c;
+                            font-family: "hiragino-kaku-gothic-pro", sans-serif;
+
+                            @include mqSp {
+                                font-size: 1.3rem;
+                                font-weight: 600;
+                                letter-spacing: 0.01em;
+                                border-left: none;
+                                padding: 5px 0 40px;
+                                line-height: 2;
+                            }
+                        }
+                    }
+
+                    .description {
+                        color: #696a6c;
+                        margin-bottom: 40px;
+                        font-family: yu-gothic-pr6n, sans-serif;
+
+                        p {
+                            font-size: 18px;
+                            font-size: 1.8rem;
+                            line-height: 2.2;
+                            letter-spacing: 0em;
+                            margin-bottom: 20px;
+                            font-family: "游ゴシック体", "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", YuGothic, "メイリオ", Meiryo, sans-serif;
+
+                            @include mqSp {
+                                font-size: 1.2rem;
+                                margin-bottom: 10px;
+                                line-height: 2.3;
+                            }
+                        }
+                    }
+
+                    .custom-link {
+                        margin-bottom: 25px;
+
+                        @include mqSp {
+                            margin-bottom: 10px;
+                        }
+
+                        a {
+                            color: #696a6c;
+                            letter-spacing: 0.01em;
+                            line-height: 1.6;
+                            display: inline-block;
+                            position: relative;
+                            padding-left: 32px;
+                            font-size: 2.0rem;
+                            font-weight: 500;
+                            font-family: "游ゴシック体", "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", YuGothic, "メイリオ", Meiryo, sans-serif;
+                            font-weight: bold;
+
+                            @include mqSp {
+                                font-size: 1.3rem;
+                                letter-spacing: 0.01em;
+                                padding-left: 27px;
+                            }
+
+                            &:before {
+                                content: "";
+                                width: 22px;
+                                height: 22px;
+                                background: url('../img/link-icon.svg')no-repeat;
+                                position: absolute;
+                                top: 6px;
+                                left: 0;
+                                transition: 0.5s;
+
+                                @include mqSp {
+                                    width: 16px;
+                                    height: 16px;
+                                    top: 2px;
+                                }
+                            }
+
+                            &:hover {
+                                color: #696a6c;
+
+                                &::before {
+                                    background: url('../img/link-icon.svg')no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .wp-navigation {
+                margin: 65px 0 0;
+            }
+        }
+
+        .circle {
+            position: absolute;
+            max-width: 826px;
+            width: 100%;
+            height: 826px;
+            right: -27%;
+            top: -43%;
+            z-index: -1;
+
+            @media(max-width: 1400px) {
+                max-width: 750px;
+                width: 80%;
+            }
+
+            @include mqTab {
+                width: 75%;
+            }
+
+            @include mqSp {
+                display: none;
+            }
+
+            img {
+                animation: rotate-circle 15s linear infinite;
+                -webkit-animation: rotate-circle 15s linear infinite;
+            }
+        }
+    }
+}

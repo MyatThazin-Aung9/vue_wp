@@ -1,0 +1,95 @@
+.sl {
+    &-company {
+        &-inn {
+            @include mqSp {
+                padding-top: 50px;
+            }
+
+            .breadcrumbs {
+                padding-left: 20px;
+                margin-bottom: 60px;
+
+                @include mqSp {
+                    margin: 10px auto 20px;
+                    padding-left: 0;
+                }
+            }
+
+            &-content {
+                max-width: 845px;
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 50px;
+
+                @include mqSp {
+                    width: 90%;
+                    margin: 0 auto 30px;
+                    padding-top: 30px;
+                }
+
+                dl {
+                    color: #696a6c;
+                    font-size: 18px;
+                    font-size: 1.8rem;
+                    letter-spacing: 0.1em;
+                    line-height: 2;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: baseline;
+                    margin-bottom: 40px;
+
+                    @include mqSp {
+                        line-height: 1.7;
+                        font-size: 1.4rem;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 50px;
+                        display: block;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    dt {
+                        border-bottom: 2px solid #696a6c;
+                        width: 202px;
+                        margin-right: 20px;
+
+                        @include mqSp {
+                            max-width: 137px;
+                            width: 85%;
+                            border-bottom: 1px solid #696a6c;
+                            margin-right: 0;
+                            margin-bottom: 10px;
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    dd {
+                        width: 100%;
+
+                        @include mqSp() {
+                            line-height: 2;
+                        }
+
+                        p {
+                            margin-bottom: 40px;
+
+                            @include mqSp() {
+                                margin-bottom: 25px;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            a {
+                                color: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

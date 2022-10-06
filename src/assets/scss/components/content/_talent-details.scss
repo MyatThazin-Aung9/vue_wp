@@ -1,0 +1,1134 @@
+.sl {
+    &-talent {
+        &-inn {
+            .talent-detail {
+                margin-top: 12px;
+                @include mqSp {
+                    margin-top: 10px;
+                }
+                &-content01 {
+                    position: relative;
+                    justify-content: space-between;
+                    margin-bottom: 60px;
+                    @include mqSp {
+                        margin-bottom: 30px;
+                    }
+                    .slider-image {
+                        width: 50%;
+                        @media screen and (max-width: 1000px) {
+                            width: 100%;
+                        }
+                        @include mqSp {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        .slider-for {
+                            position: relative;
+                            &:after {
+                                content: "";
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 5px;
+                                left: 5px;
+                                z-index: -1;
+                                background: #696a6c;
+                                @include mqSp {
+                                    top: 3px;
+                                    left: 2px;
+                                }
+                            }
+                            figure {
+                                img {
+                                    height: 816px;
+                                    object-fit: cover;
+                                    @include mqTab {
+                                        height: 630px;
+                                    }
+                                    @include mqSp {
+                                        height: 800px;
+                                    }
+                                    @include mqSp {
+                                        height: 950px;
+                                    }
+                                    @include mqSsp {
+                                        height: 520px;
+                                    }
+                                }
+                            }
+                        }
+                        .slider-nav {
+                            margin: 20px -8px 0 -8px;
+                            @include mqSp {
+                                margin: 12px -4px 0 -4px;
+                            }
+                            figure {
+                                padding: 0 8px;
+                                @include mqSp {
+                                    padding: 0 4px;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                            .slick-track {
+                                margin-left: 0 !important;
+                            }
+                        }
+                    }
+                    .description {
+                        width: 46%;
+                        @include mqSp {
+                            width: 100%;
+                            margin-top: 6px;
+                        }
+                        .name {
+                            span {
+                                display: block;
+                                color: #696a6c;
+                                line-height: 1.3;
+                            }
+                            .comment {
+                                font-size: 20px;
+                                font-size: 2.0rem;
+                                letter-spacing: 0;
+                                margin-bottom: 10px;
+                                padding-left: 10px;
+                                line-height: 1.5;
+                                @include mqSp {
+                                    font-size: 12px;
+                                    font-size: 1.2rem;
+                                    padding-left: 5px;
+                                }
+                            }
+                            .jp {
+                                font-size: 50px;
+                                font-size: 5.0rem;
+                                letter-spacing: 0;
+                                position: relative;
+                                margin-bottom: 15px;
+                                @include mqSp {
+                                    margin-bottom: 8px;
+                                    font-size: 2.5rem;
+                                    font-weight: 200;
+                                }
+                                &:after {
+                                    content: "";
+                                    width: 100vw;
+                                    height: 1px;
+                                    background: #9ebeff;
+                                    display: block;
+                                }
+                            }
+                            .eng {
+                                font-size: 14px;
+                                font-size: 1.4rem;
+                                padding-left: 10px;
+                                letter-spacing: 0.2em;
+                                @include mqSp {
+                                    font-size: 10px;
+                                    font-size: 1.0rem;
+                                    letter-spacing: 0.1em;
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                        .follower-list {
+                            margin-bottom: 110px;
+                            @include mqSp {
+                                margin-bottom: 50px;
+                            }
+                            li {
+                                margin-bottom: 30px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                // justify-content: space-between;
+                                @include mqSp {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                            span {
+                                display: inline-block;
+                            }
+                            .count-number {
+                                font-size: 26px;
+                                font-size: 2.6rem;
+                                letter-spacing: 0.04em;
+                                font-family: "Helvetica Neue", sans-serif;
+                                line-height: 1.3;
+                                color: #696a6c;
+                                text-align: right;
+                                margin-right: 7%;
+                                max-width: 110px;
+                                width: 30%;
+                                @include mqTab() {
+                                    font-size: 20px;
+                                    font-size: 2.0rem;
+                                    margin-right: 5%;
+                                }
+                                @include mqSp {
+                                    font-size: 1.3rem;
+                                    margin-right: 10px;
+                                    width: 70px;
+                                }
+                            }
+                            .image-icon {
+                                margin-right: 3%;
+                                width: 36px;
+                                @include mqTab() {
+                                    margin-right: 1.5%;
+                                }
+                                @include mqSp {
+                                    width: 25px;
+                                    margin-right: 0;
+                                }
+                                img {
+                                    width: auto;
+                                }
+                            }
+                            .progressbar {
+                                max-width: 330px;
+                                height: 8px;
+                                background: #696a6c;
+                                @include mqSp {
+                                    height: 4px;
+                                }
+                            }
+                            .insta {
+                                .image-icon {
+                                    img {
+                                        height: 34px;
+                                        @include mqTab() {
+                                            height: 29px;
+                                        }
+                                        @include mqSp() {
+                                            height: 17px;
+                                        }
+                                    }
+                                }
+                                .progressbar {
+                                    // max-width: 266px;
+                                    // width: 51%;
+                                }
+                            }
+                            .twitter {
+                                .image-icon {
+                                    img {
+                                        height: 25px;
+                                        @include mqTab() {
+                                            height: 20px;
+                                        }
+                                        @include mqSp() {
+                                            height: 14px;
+                                        }
+                                    }
+                                }
+                                .progressbar {
+                                    // max-width: 170px;
+                                    // width: 35%;
+                                }
+                            }
+                            .tiktok {
+                                .image-icon {
+                                    img {
+                                        height: 33px;
+                                        @include mqTab() {
+                                            height: 28px;
+                                        }
+                                        @include mqSp() {
+                                            height: 16px;
+                                        }
+                                    }
+                                }
+                                .progressbar {
+                                    max-width: 240px;
+                                    width: 45%;
+                                }
+                            }
+                            .youtube {
+                                .image-icon {
+                                    img {
+                                        height: 27px;
+                                        @include mqTab() {
+                                            height: 22px;
+                                        }
+                                        @include mqSp {
+                                            height: 13px;
+                                        }
+                                    }
+                                }
+                                .progressbar {
+                                    // max-width: 192px;
+                                    // width: 40%;
+                                }
+                            }
+                        }
+                        .manager-comment {
+                            max-width: 480px;
+                            width: 100%;
+                            position: relative;
+                            padding: 35px 25px 35px;
+                            border: 1px solid #696a6c;
+                            border-radius: 10px;
+                            background-color: #f6f6f6;
+                            @include mqSp {
+                                border-radius: 5px;
+                                padding: 18px 10px 15px;
+                            }
+                            &:after {
+                                content: "";
+                                width: 40px;
+                                height: 25px;
+                                background: #f6f6f6;
+                                border-bottom: 1px solid #696a6c;
+                                transform: rotate(-42deg) translateX(-50%);
+                                position: absolute;
+                                bottom: -4px;
+                                left: 55%;
+                                -webkit-transform: rotate(-42deg) translateX(-50%);
+                                -moz-transform: rotate(-42deg) translateX(-50%);
+                                -ms-transform: rotate(-42deg) translateX(-50%);
+                                -o-transform: rotate(-42deg) translateX(-50%);
+                                @include mqSp {
+                                    width: 25px;
+                                    left: 48%;
+                                }
+                            }
+                            p {
+                                font-size: 16px;
+                                font-size: 1.6rem;
+                                letter-spacing: 0;
+                                line-height: 2;
+                                color: #696a6c;
+                                @include mqSp {
+                                    font-size: 12px;
+                                    font-size: 1.2rem;
+                                }
+                            }
+                            span {
+                                font-size: 14px;
+                                font-size: 1.4rem;
+                                font-family: "Helvetica", sans-serif;
+                                letter-spacing: 0.1em;
+                                font-weight: 600;
+                                line-height: 1.7;
+                                color: #fff;
+                                background: #696a6c;
+                                padding: 2px 15px 0;
+                                border-radius: 50px;
+                                position: absolute;
+                                top: -14px;
+                                left: 13px;
+                                @include mqSp {
+                                    width: 55%;
+                                    padding: 0 8px;
+                                    font-size: 1.0rem;
+                                    top: -9px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                }
+                            }
+                        }
+                    }
+                    .circle01 {
+                        position: absolute;
+                        max-width: 826px;
+                        width: 100%;
+                        height: 826px;
+                        right: -52%;
+                        top: 39%;
+                        z-index: -1;
+                        @media(max-width: 1400px) {
+                            max-width: 750px;
+                            width: 80%;
+                        }
+                        @include mqTab {
+                            width: 75%;
+                        }
+                        @include mqSp {
+                            max-width: 900px;
+                            height: 900px;
+                        }
+                        img {
+                            animation: rotate-circle 15s linear infinite;
+                            -webkit-animation: rotate-circle 15s linear infinite;
+                        }
+                    }
+                }
+                .social-list {
+                    margin-top: 18px;
+                    margin-bottom: 90px;
+                    flex-flow: nowrap;
+                    @include mqSp {
+                        width: 100%;
+                        margin: 15px auto 30px;
+                    }
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 10px;
+                        width: 14%;
+                        max-width: 40px;
+                        height: 40px;
+                        border: 1px solid #696a6c;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        @include mqSp {
+                            width: 14%;
+                            max-width: 33px;
+                            height: 33px;
+                            margin-right: 8px;
+                            border: 1px solid #696a6c;
+                        }
+                        &:hover {
+                            background-color: #f6f6f6;
+                            @include mqSp {
+                                background-color: transparent;
+                            }
+                            img {
+                                opacity: 0;
+                                @include mqSp {
+                                    opacity: 1;
+                                }
+                                &.img-hover {
+                                    opacity: 1;
+                                    @include mqSp {
+                                        opacity: 0;
+                                    }
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            width: 60px;
+                            position: relative;
+                            transition: all .5s ease-in-out;
+                            -webkit-transition: all .5s ease-in-out;
+                            -moz-transition: all .5s ease-in-out;
+                            -ms-transition: all .5s ease-in-out;
+                            -o-transition: all .5s ease-in-out;
+                            img {
+                                &.img-hover {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0;
+                                    right: 0;
+                                    margin: 0 auto;
+                                    opacity: 0;
+                                    transition: all .5s ease-in-out;
+                                    -webkit-transition: all .5s ease-in-out;
+                                    -moz-transition: all .5s ease-in-out;
+                                    -ms-transition: all .5s ease-in-out;
+                                    -o-transition: all .5s ease-in-out;
+                                    transform: translateY(-50%);
+                                    -webkit-transform: translateY(-50%);
+                                    -moz-transform: translateY(-50%);
+                                    -ms-transform: translateY(-50%);
+                                    -o-transform: translateY(-50%);
+                                    @include mqSp {
+                                        transform: unset;
+                                        -webkit-transform: unset;
+                                        -moz-transform: unset;
+                                        -ms-transform: unset;
+                                        -o-transform: unset;
+                                    }
+                                }
+                                &.home {
+                                    height: 20px;
+                                    @include mqSp {
+                                        height: 17px;
+                                    }
+                                }
+                                &.ig {
+                                    height: 18px;
+                                    @include mqSp {
+                                        height: 15px;
+                                    }
+                                }
+                                &.twt {
+                                    height: 15px;
+                                    @include mqSp {
+                                        height: 13px;
+                                    }
+                                }
+                                &.tik {
+                                    height: 17px;
+                                    @include mqSp {
+                                        height: 15px;
+                                    }
+                                }
+                                &.ytb {
+                                    height: 14px;
+                                    @include mqSp {
+                                        height: 11px;
+                                    }
+                                }
+                                &.sh {
+                                    height: 15px;
+                                    @include mqSp {
+                                        height: 13px;
+                                    }
+                                }
+                                &.note {
+                                    height: 17px;
+                                    @include mqSp {
+                                        height: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-contact {
+                    max-width: 605px;
+                    width: 85%;
+                    margin: 0 auto 100px;
+                    @include mqSp {
+                        margin: 0 auto 68px;
+                    }
+                    a {
+                        img {
+                            transition: all .3s;
+                            -webkit-transition: all .3s;
+                            -moz-transition: all .3s;
+                            -ms-transition: all .3s;
+                            -o-transition: all .3s;
+                        }
+                        &:hover {
+                            img {
+                                transform: scale(1.05);
+                                -webkit-transform: scale(1.05);
+                                -moz-transform: scale(1.05);
+                                -ms-transform: scale(1.05);
+                                -o-transform: scale(1.05);
+                                @include mqSp {
+                                    transform: scale(1);
+                                    -webkit-transform: scale(1);
+                                    -moz-transform: scale(1);
+                                    -ms-transform: scale(1);
+                                    -o-transform: scale(1);
+                                }
+                            }
+                        }
+                    }
+                }
+                &-content02 {
+                    position: relative;
+                    justify-content: space-between;
+                    .talent-profile {
+                        width: 45%;
+                        color: #696a6c;
+                        @include mqSp {
+                            width: 100%;
+                            margin-bottom: 40px;
+                        }
+                        .talent-ttl {
+                            &:after {
+                                @include mqSp {
+                                    width: 78.6%;
+                                }
+                            }
+                        }
+                        .name {
+                            font-size: 35px;
+                            font-size: 3.5rem;
+                            letter-spacing: 0;
+                            line-height: 1.5;
+                            margin-bottom: 30px;
+                            @include mqSp {
+                                font-size: 2.0rem;
+                                font-weight: 200;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .info-list {
+                            dl {
+                                margin-bottom: 10px;
+                                display: flex;
+                                align-items: flex-start;
+                                font-size: 16px;
+                                font-size: 1.6rem;
+                                letter-spacing: 0;
+                                line-height: 2;
+                                @include mqSp {
+                                    font-size: 11px;
+                                    font-size: 1.1rem;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                            dt {
+                                text-align: right;
+                                width: 80px;
+                                margin-right: 20px;
+                                @include mqSp {
+                                    width: 45px;
+                                    margin-right: 10px;
+                                }
+                            }
+                            dt,
+                            dd {
+                                display: inline-block;
+                            }
+                        }
+                        .talent-content {
+                            p {
+                                color: #696a6c;
+                                font-size: 16px;
+                                font-size: 1.6rem;
+                                letter-spacing: 0;
+                                line-height: 2.4;
+                                text-align: justify;
+                                padding-bottom: 30px;
+                                @include mqSp {
+                                    font-size: 1.2rem;
+                                    letter-spacing: 0.01em;
+                                    line-height: 2;
+                                    padding-bottom: 0;
+                                }
+                                &:last-of-type {
+                                    padding-bottom: 300px;
+                                    @include mqSp() {
+                                        padding-bottom: 30px;
+                                    }
+                                }
+                            }
+                        }
+                        .social-list {
+                            margin-bottom: 35px;
+                            @include mqSp {
+                                margin: 20px auto;
+                            }
+                        }
+                    }
+                    .sns-icon {
+                        margin: 0 0 30px;
+                        @include mqSp {
+                            margin: 20px 0;
+                        }
+                    }
+                    .talent-tags {
+                        border-bottom: 1px solid #696a6c;
+                        padding-bottom: 30px;
+                        margin-bottom: 30px;
+                        justify-content: left;
+                        @include mqSp {
+                            padding-bottom: 10px;
+                            margin-bottom: 20px;
+                        }
+                        li {
+                            margin-right: 20px;
+                            margin-bottom: 10px;
+                            @include mqSp {
+                                margin-right: 10px;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            a {
+                                color: #696a6c;
+                                font-size: 16px;
+                                font-size: 1.6rem;
+                                letter-spacing: 0;
+                                line-height: 2;
+                                @include mqSp {
+                                    font-size: 1.2rem;
+                                    line-height: 1.2;
+                                }
+                            }
+                        }
+                    }
+                    .talent-topic-schedule {
+                        width: 45%;
+                        @include mqSp {
+                            width: 100%;
+                        }
+                    }
+                    .talent-topic {
+                        margin-bottom: 100px;
+                        @include mqSp {
+                            margin-bottom: 80px;
+                        }
+                        .talent-ttl {
+                            margin-bottom: 60px;
+                            @include mqSp {
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .talent-topic-item {
+                            margin-top: 40px;
+                            @include mqSp {
+                                margin-top: 20px;
+                            }
+                            .topic-details .image img {
+                                height: 200px;
+                                @include mqSp() {
+                                    height: 140px;
+                                }
+                            }
+                            &.show {
+                                article {
+                                    &:nth-child(n+4) {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        height: 100%;
+                                    }
+                                }
+                                .more-plus {
+                                    a {
+                                        &:after {
+                                            background: #fff;
+                                            height: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                            article {
+                                transition: opacity 0.5s all;
+                                -webkit-transition: opacity 0.5s all;
+                                -moz-transition: opacity 0.5s all;
+                                -ms-transition: opacity 0.5s all;
+                                -o-transition: opacity 0.5s all;
+                                // &:nth-child(n+4) {
+                                //     opacity: 0;
+                                //     visibility: hidden;
+                                //     height: 0;
+                                // }
+                            }
+                            .topic-details {
+                                @include mqSp {
+                                    margin-bottom: 30px;
+                                    .image {
+                                        width: 44%;
+                                        &:after {
+                                            top: 2px;
+                                            left: 2px;
+                                        }
+                                        img {
+                                            height: 140px;
+                                        }
+                                    }
+                                    .details-wrap {
+                                        width: 51%;
+                                        .detail-text {
+                                            font-size: 1.1rem;
+                                            line-height: 1.9;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .talent-schedule {
+                        margin-bottom: 100px;
+                        @include mqSp {
+                            margin-bottom: 80px;
+                        }
+                        .talent-ttl {
+                            @include mqSp {
+                                .cTitle .title {
+                                    padding-right: 15px;
+                                }
+                                &:after {
+                                    width: 69.4%;
+                                }
+                            }
+                        }
+                        &.show {
+                            article {
+                                &:nth-child(n+4) {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    height: 100%;
+                                }
+                            }
+                            .more-plus {
+                                a {
+                                    &:after {
+                                        background: #fff;
+                                        height: 2px;
+                                    }
+                                }
+                            }
+                        }
+                        article {
+                            transition: opacity 0.5s all;
+                            -webkit-transition: opacity 0.5s all;
+                            -moz-transition: opacity 0.5s all;
+                            -ms-transition: opacity 0.5s all;
+                            -o-transition: opacity 0.5s all;
+                            // &:nth-child(n+4) {
+                            //     opacity: 0;
+                            //     visibility: hidden;
+                            //     height: 0;
+                            // }
+                        }
+                        &-list {
+                            width: 95%;
+                            margin: 20px auto;
+                            @include mqSp {
+                                width: 100%;
+                            }
+                            li {
+                                margin-right: 15px;
+                                margin-bottom: 10px;
+                                @include mqSp {
+                                    margin-right: 2%;
+                                    margin-bottom: 10px;
+                                    width: 32%;
+                                    &:nth-child(3n) {
+                                        margin-right: 0;
+                                    }
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                a {
+                                    color: #fff;
+                                }
+                                span {
+                                    display: block;
+                                    width: 65px;
+                                    padding: 7px 5px;
+                                    border: 1.5px solid #fff;
+                                    font-size: 6px;
+                                    font-size: 0.6rem;
+                                    letter-spacing: 0.2em;
+                                    font-family: "Helvetica", sans-serif;
+                                    border-radius: 30px;
+                                    -webkit-border-radius: 30px;
+                                    -moz-border-radius: 30px;
+                                    -ms-border-radius: 30px;
+                                    -o-border-radius: 30px;
+                                    text-align: center;
+                                    box-sizing: border-box;
+                                    @include mqSp {
+                                        padding: 3px;
+                                        width: 100%;
+                                        border: 1px solid #fff;
+                                    }
+                                }
+                            }
+                        }
+                        .talent-schedule-item {
+                            margin-top: 40px;
+                            @include mqSp {
+                                margin-top: 20px;
+                            }
+                            .schedule-details {
+                                @include mqSp {
+                                    width: 100%;
+                                }
+                                .person-img {
+                                    width: 148px;
+                                    @include mqSp {
+                                        width: 100px;
+                                    }
+                                    img {
+                                        width: 148px;
+                                        height: 148px;
+                                        object-fit: cover;
+                                        @include mqSp {
+                                            width: 100px;
+                                            height: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                            .schedule-details {
+                                .person-text {
+                                    width: calc(100% - 148px);
+                                    @include mqSp {
+                                        width: calc(100% - 100px);
+                                    }
+                                    .tag-name span {
+                                        @include mqSp {
+                                            padding: 3px 12px;
+                                        }
+                                    }
+                                    .date {
+                                        font-size: 1.3rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .more-plus {
+                    text-align: center;
+                    padding-bottom: 15px;
+                    background-image: linear-gradient(to right, #696a6c 45%, rgba(255, 255, 255, 0) 0%);
+                    background-position: bottom;
+                    background-size: 10px 1px;
+                    background-repeat: repeat-x;
+                    @include mqSp {
+                        padding-bottom: 8px;
+                        background-size: 7px 1px;
+                    }
+                    a {
+                        font-size: 16px;
+                        font-size: 1.6rem;
+                        letter-spacing: 0.1em;
+                        color: #696a6c;
+                        padding-left: 25px;
+                        position: relative;
+                        font-weight: 600;
+                        font-family: "Helvetica", sans-serif;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        @include mqSp {
+                            font-size: 1.0rem;
+                            padding-left: 13px;
+                        }
+                        &:after {
+                            content: "";
+                            width: 15px;
+                            height: 15px;
+                            background: url('../img/white-plus.svg')no-repeat;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            -webkit-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            -o-transform: translateY(-50%);
+                            @include mqSp {
+                                width: 7px;
+                                height: 7px;
+                            }
+                        }
+                    }
+                }
+                .talent-ttl {
+                    font-size: 42px;
+                    font-size: 4.2rem;
+                    letter-spacing: 0.1em;
+                    font-family: "Helvetica", sans-serif;
+                    color: #fff;
+                    margin-bottom: 45px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #696a6c;
+                    @include mqSp {
+                        font-size: 2.1rem;
+                        border-bottom: none;
+                        padding-bottom: 0;
+                        position: relative;
+                        margin-bottom: 27px;
+                    }
+                    &:after {
+                        @include mqSp {
+                            content: "";
+                            width: 83.6%;
+                            height: 1px;
+                            background: #696a6c;
+                            position: absolute;
+                            right: -20%;
+                            top: 11px;
+                            z-index: -1;
+                        }
+                    }
+                }
+                .talent-media {
+                    position: relative;
+                    padding: 30px 0 50px;
+                    @include mqSp {
+                        padding: 30px 0;
+                    }
+                    &:after {
+                        content: "";
+                        width: 100vw;
+                        height: 100%;
+                        background: #fff;
+                        top: 0;
+                        transform: translateX(-50%);
+                        left: 50%;
+                        position: absolute;
+                    }
+                    .talent-ttl {
+                        color: #696a6c;
+                        z-index: 1;
+                        position: relative;
+                        @include mqSp {
+                            margin-bottom: 60px;
+                            &:after {
+                                width: 88%;
+                            }
+                        }
+                        span {
+                            @include mqSp {
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                    .media-fl {
+                        justify-content: space-between;
+                        z-index: 1;
+                        position: relative;
+                        &-wrap {
+                            width: 45%;
+                            @include mqSp {
+                                width: 100%;
+                            }
+                            .media-item {
+                                background-image: #696a6c;
+                                background-position: bottom;
+                                background-size: 10px 2px;
+                                background-repeat: repeat-x;
+                                margin-bottom: 65px;
+                                padding-bottom: 30px;
+                                position: relative;
+                                @include mqSp {
+                                    width: 100%;
+                                    margin-bottom: 30px;
+                                    padding-bottom: 15px;
+                                    background-size: 7px 1px;
+                                }
+                                h3 {
+                                    color: #696a6c;
+                                    font-size: 23px;
+                                    font-size: 2.3rem;
+                                    letter-spacing: 0.1em;
+                                    line-height: 1.6;
+                                    font-weight: 600;
+                                    font-family: "Helvetica", sans-serif;
+                                    margin-bottom: 15px;
+                                    @include mqSp {
+                                        font-size: 1.4rem;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                &.show {
+                                    p {
+                                        &:nth-child(n+4) {
+                                            opacity: 1;
+                                            visibility: visible;
+                                            height: 100%;
+                                        }
+                                    }
+                                    .more-plus {
+                                        a {
+                                            &:after {
+                                                background: #696a6c;
+                                                height: 2px;
+                                                @include mqSp {
+                                                    height: 1px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .media-list {
+                                    height: auto;
+                                    margin-bottom: 30px;
+                                    overflow: hidden;
+                                    @include mqSp {
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                                p {
+                                    color: #696a6c;
+                                    font-size: 18px;
+                                    font-size: 1.8rem;
+                                    letter-spacing: 0;
+                                    line-height: 2.2;
+                                    @include mqSp {
+                                        font-size: 1.1rem;
+                                        line-height: 2;
+                                        height: auto;
+                                    }
+                                    &:nth-child(n+4) {
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        height: 0;
+                                    }
+                                }
+                                .more-plus {
+                                    padding-top: 30px;
+                                    background: none;
+                                    margin-bottom: 20px;
+                                    padding-bottom: 0;
+                                    text-align: right;
+                                    padding-right: 10px;
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: 0;
+                                    @include mqSp {
+                                        margin-bottom: 8px;
+                                    }
+                                    a {
+                                        cursor: pointer;
+                                        color: #696a6c;
+                                        &:after {
+                                            background: url('../img/cyan-plus.svg') no-repeat;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .circle02 {
+                        position: absolute;
+                        width: 100%;
+                        max-width: 826px;
+                        height: 826px;
+                        left: -38%;
+                        top: -300px;
+                        z-index: 0;
+                        @media(max-width: 1400px) {
+                            max-width: 750px;
+                            width: 80%;
+                        }
+                        @include mqTab {
+                            width: 75%;
+                        }
+                        @include mqSp {
+                            top: -70px;
+                            max-width: 413px;
+                            height: 413px;
+                        }
+                        img {
+                            animation: rotate-circle 15s linear infinite;
+                            -webkit-animation: rotate-circle 15s linear infinite;
+                        }
+                    }
+                }
+            }
+        }
+        &.detail {
+            overflow: hidden;
+            @include mqTab {
+                padding-top: 50px;
+            }
+            .breadcrumbs {
+                display: flex;
+                width: 85%;
+                max-width: 1180px;
+                margin: 40px auto 80px;
+                @include mqSp {
+                    width: 90%;
+                    margin: 10px auto 20px;
+                }
+            }
+            .sl-talent-inn {
+                width: 85%;
+                max-width: 1180px;
+                margin: 80px auto 0;
+                @include mqSp {
+                    width: 90%;
+                    margin: 40px auto 0;
+                }
+            }
+        }
+    }
+}

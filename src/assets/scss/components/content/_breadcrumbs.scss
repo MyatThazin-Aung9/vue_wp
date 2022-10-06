@@ -1,0 +1,63 @@
+//for breadcrumbs
+.breadcrumbs {
+    display: flex;
+    width: 90%;
+    max-width: 1080px;
+    margin: 40px auto 10px;
+
+    @include mqSp() {
+        margin: 10px auto 20px;
+    }
+
+    span {
+        text-transform: uppercase;
+    }
+
+    a {
+        position: relative;
+        font-family: "Helvetica", sans-serif;
+        font-weight: 300;
+        display: inline-block;
+        color: #696a6c;
+        padding-right: 20px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            width: 11px;
+            height: 11px;
+            display: block;
+            background-repeat: no-repeat;
+            background-image: url('../img/more-next.svg');
+            right: 3px;
+
+            @include mqSp {
+                width: 8px;
+                height: 8px;
+            }
+        }
+
+        span {
+            font-family: "Helvetica", sans-serif;
+            font-weight: 300;
+            vertical-align: bottom;
+            margin: 0 2px;
+        }
+    }
+
+    span {
+        color: #696a6c;
+        font-size: 13px;
+        font-size: 1.3rem;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        font-family: kozuka-gothic-pro, sans-serif;
+        font-weight: 400;
+
+        @include mqSp {
+            font-size: 1.0rem;
+            line-height: 1.5;
+        }
+    }
+}

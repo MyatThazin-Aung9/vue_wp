@@ -1,0 +1,697 @@
+.l {
+    &-contact {
+        position: relative;
+        padding: 310px 0 300px;
+        @include mqSp {
+            padding: 140px 0 150px;
+        }
+        .border-top-circle {
+            position: absolute;
+            top: 180px;
+            left: -100px;
+            right: -100px;
+            margin: 0 auto;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            z-index: -2;
+            background-color: #696a6c;
+            @include mqSp {
+                top: 70px;
+                left: -50%;
+                right: -50%;
+            }
+        }
+        &-inn {
+            position: relative;
+            width: 90%;
+            max-width: 1080px;
+            margin: 0 auto;
+            @include mqSp {
+                width: 90%;
+            }
+            &-ttl {
+                .cTitle {
+                    text-align: center;
+                    h2 {
+                        padding-left: 0;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    .title {
+                        color: #fff;
+                    }
+                }
+            }
+            &-content {
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 30px;
+                @include mqSp {
+                    padding-top: 0px;
+                }
+                &-fl {
+                    justify-content: center;
+                    @include mqSp {
+                        flex-direction: column;
+                    }
+                }
+                .contact-details {
+                    width: 33%;
+                    margin-right: 0;
+                    color: #fff;
+                    @include mqSp {
+                        position: relative;
+                        display: flex;
+                        flex-flow: nowrap;
+                        width: 100%;
+                        align-items: center;
+                    }
+                    &:hover {
+                        .image {
+                            @include mqSp {
+                                transform: unset;
+                                -webkit-transform: unset;
+                                -moz-transform: unset;
+                                -ms-transform: unset;
+                                -o-transform: unset;
+                            }
+                            img {
+                                transform: rotate(-45deg) scale(1.15);
+                                -webkit-transform: rotate(-45deg) scale(1.15);
+                                -moz-transform: rotate(-45deg) scale(1.15);
+                                -ms-transform: rotate(-45deg) scale(1.15);
+                                -o-transform: rotate(-45deg) scale(1.15);
+                                @include mqSp {
+                                    transform: rotate(-45deg) scale(1);
+                                    -webkit-transform: rotate(-45deg) scale(1);
+                                    -moz-transform: rotate(-45deg) scale(1);
+                                    -ms-transform: rotate(-45deg) scale(1);
+                                    -o-transform: rotate(-45deg) scale(1);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        @include mqSp {
+                            flex-direction: row-reverse;
+                        }
+                        .text {
+                            @include mqSp {
+                                left: 0;
+                                right: unset;
+                                padding: 10px 20% 10px 5px;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .image {
+                        position: relative;
+                        figure {
+                            outline: none;
+                            transform: rotate(45deg) scale(1);
+                            -webkit-transform: rotate(45deg) scale(1);
+                            -moz-transform: rotate(45deg) scale(1);
+                            -ms-transform: rotate(45deg) scale(1);
+                            -o-transform: rotate(45deg) scale(1);
+                            clip-path: ellipse(35% 50% at 50% 50%);
+                            @include mqSp {
+                                clip-path: ellipse(39% 50% at 50% 50%);
+                            }
+                        }
+                        @include mqSp {
+                            max-width: 260px;
+                            width: 45%;
+                        }
+                        .fig02 {
+                            img {
+                                object-position: right center;
+                            }
+                        }
+                        img {
+                            object-fit: cover;
+                            object-position: center;
+                            transform: rotate(-45deg) scale(1);
+                            -webkit-transform: rotate(-45deg) scale(1);
+                            -moz-transform: rotate(-45deg) scale(1);
+                            -ms-transform: rotate(-45deg) scale(1);
+                            -o-transform: rotate(-45deg) scale(1);
+                            transition: all .3s;
+                            -webkit-transition: all .3s;
+                            -moz-transition: all .3s;
+                            -ms-transition: all .3s;
+                            -o-transition: all .3s;
+                            @include mqSp {
+                                width: 100% !important;
+                                max-width: 180px !important;
+                                height: 180px !important;
+                            }
+                            @media screen and (max-width: 400px) {
+                                max-width: 170px !important;
+                                height: 170px !important;
+                            }
+                            @media screen and (max-width: 320px) {
+                                max-width: 150px !important;
+                                height: 150px !important;
+                            }
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 90px;
+                            left: 35px;
+                            width: 80%;
+                            height: 80%;
+                            background: #000;
+                            z-index: -1;
+                            @include mqSp {
+                                top: 35px;
+                                width: 116px;
+                                height: 116px;
+                                left: 10px;
+                            }
+                            @media screen and (max-width: 400px) {
+                                left: 15px;
+                            }
+                            @media screen and (max-width: 320px) {
+                                left: 10px;
+                            }
+                        }
+                    }
+                    .text {
+                        margin-top: 50px;
+                        line-height: 1.3;
+                        text-align: center;
+                        @include mqSp {
+                            width: 75%;
+                            margin-top: 0;
+                            padding: 10px 5px 10px 20%;
+                            box-sizing: border-box;
+                            border: 1px solid #fff;
+                            position: absolute;
+                            right: 0;
+                            top: 40%;
+                            z-index: -2;
+                        }
+                        h4 {
+                            font-size: 30px;
+                            font-size: 3.0rem;
+                            letter-spacing: 0.1em;
+                            text-align: center;
+                            font-family: "Helvetica Neue", sans-serif;
+                            @include mqSp {
+                                font-size: 1.5rem;
+                                margin-bottom: 3px;
+                            }
+                        }
+                        p {
+                            font-size: 11px;
+                            font-size: 1.1rem;
+                            letter-spacing: 0.05em;
+                            line-height: 1.5;
+                            text-align: center;
+                            @include mqSp {
+                                font-size: 1.0rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .top-btn {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            cursor: pointer;
+            max-width: 50px;
+            @include mqSp() {
+                bottom: 30px;
+            }
+            &:hover {
+                img {
+                    transform: translateY(-10px);
+                    -webkit-transform: translateY(-10px);
+                    -moz-transform: translateY(-10px);
+                    -ms-transform: translateY(-10px);
+                    -o-transform: translateY(-10px);
+                    @include mqSp {
+                        transform: unset;
+                        -webkit-transform: unset;
+                        -moz-transform: unset;
+                        -ms-transform: unset;
+                        -o-transform: unset;
+                    }
+                }
+            }
+            img {
+                height: 63px;
+                width: auto;
+                display: block;
+                margin: 0 auto 10px 22px;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                @include mqSp {
+                    height: 33px;
+                }
+            }
+            span {
+                display: block;
+                font-size: 22px;
+                font-size: 2.2rem;
+                letter-spacing: 0.075em;
+                text-align: center;
+                font-family: "Helvetica", sans-serif;
+                @include mqSp {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.home {
+    .l-contact {
+        position: relative;
+        padding: 50px 0 300px;
+        background: #696a6c;
+        @include mqSp {
+            padding: 0 0 130px;
+        }
+        &-inn {
+            z-index: 9;
+        }
+        .border-top-circle {
+            top: -130px;
+            z-index: 0;
+            background: #696a6c;
+            @media screen and (max-width: 1400px) {
+                top: -100px;
+            }
+            @include mqTab() {
+                top: -60px;
+            }
+            @include mqSp() {
+                top: -62px;
+            }
+        }
+    }
+}
+
+.single-talent {
+    .l-contact {
+        padding: 200px 0 300px;
+        @include mqSp {
+            padding: 150px 0 150px;
+        }
+        .border-top-circle {
+            top: 60px;
+            @include mqSp {
+                top: 80px;
+            }
+        }
+    }
+}
+
+.sl {
+    &-contact {
+        padding: 130px 0 0;
+        @include mqSp {
+            padding: 90px 0 0;
+        }
+        &-inn {
+            &-ttl {
+                font-family: "Helvetica", sans-serif;
+                font-size: 42px;
+                font-size: 4.2rem;
+                text-align: left;
+                letter-spacing: 0.1em;
+                @include mqSp {
+                    font-size: 3rem;
+                }
+                p {
+                    margin-top: 7px;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    letter-spacing: 0.05em;
+                    margin-left: 13%;
+                    .require {
+                        color: red;
+                    }
+                    @include mqSp {
+                        margin-left: 5%;
+                        margin-top: 3px;
+                        font-size: 1.0rem;
+                    }
+                }
+            }
+            &-form {
+                width: 90%;
+                max-width: 1080px;
+                margin: 70px auto 0;
+                @include mqSp {
+                    margin-top: 30px;
+                }
+                .wpcf7-not-valid-tip,
+                .wpcf7-response-output {
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    display: block;
+                    margin-top: 10px;
+                    color: #ffff00;
+                    @include mqSp {
+                        font-size: 1.2rem;
+                    }
+                }
+                .talent-name {
+                    text-align: center;
+                    margin-bottom: 130px;
+                    @include mqSp {
+                        margin-bottom: 30px;
+                    }
+                    h3 {
+                        font-size: 50px;
+                        font-size: 5.0rem;
+                        text-transform: uppercase;
+                        width: 90%;
+                        max-width: 1080px;
+                        margin: 0 auto;
+                        @include mqSp {
+                            font-size: 2.5rem;
+                            font-weight: 300;
+                        }
+                    }
+                    p {
+                        margin-top: 10px;
+                        font-size: 21px;
+                        font-size: 2.1rem;
+                        line-height: 2;
+                        letter-spacing: 0.02em;
+                        @include mqSp {
+                            font-size: 1.1rem;
+                        }
+                        span {
+                            display: inline-block;
+                            border-bottom: 1px solid #696a6c;
+                        }
+                    }
+                }
+                table {
+                    width: 100%;
+                    display: block;
+                    padding-top: 20px;
+                    box-sizing: border-box;
+                    max-width: 865px;
+                    margin: 0 auto;
+                    tr {
+                        @include mqSp {
+                            display: block;
+                            width: 100%;
+                        }
+                        th {
+                            width: 230px;
+                            text-align: left;
+                            font-size: 18px;
+                            font-size: 1.8rem;
+                            letter-spacing: 0.05em;
+                            font-weight: 300;
+                            @include mqSp {
+                                display: block;
+                                width: 100%;
+                                margin-bottom: 10px;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        td {
+                            display: block;
+                            margin-bottom: 80px;
+                            @include mqSp {
+                                display: block;
+                                width: 100%;
+                                padding: 0 10px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        &:last-child {
+                            th {
+                                vertical-align: top;
+                                padding-top: 10px;
+                            }
+                        }
+                        .d-fl {
+                            justify-content: space-between;
+                            .wpcf7-form-control-wrap {
+                                width: 49%;
+                                @include mqSp {
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .require {
+                        color: red;
+                    }
+                    .your-choice {
+                        display: flex;
+                        align-items: center;
+                        @include mqSp {
+                            margin-top: 20px;
+                        }
+                        .wpcf7-not-valid-tip {
+                            font-size: 16px;
+                            display: block;
+                            position: absolute;
+                            bottom: -20px;
+                            color: red;
+                            @include mqSp {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        border: 1px solid #696a6c;
+                        padding: 14px 10px 10px;
+                        box-sizing: border-box;
+                        background-color: transparent;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        color: #696a6c;
+                        font-size: 18px;
+                        font-size: 1.8rem;
+                        border-radius: 0;
+                        @include mqSp() {
+                            font-size: 1.6rem;
+                            padding: 11px 10px 8px;
+                        }
+                        &::placeholder {
+                            color: #696a6c;
+                            opacity: 1;
+                        }
+                        &::-ms-input-placeholder {
+                            color: #696a6c;
+                        }
+                        &::-ms-input-placeholder {
+                            color: #696a6c;
+                        }
+                    }
+                    input[type="radio"] {
+                        width: 18px;
+                        height: 18px;
+                        padding: 0;
+                        border: 1px solid #696a6c;
+                        box-sizing: border-box;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        @include mqSp() {
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+                    [type="radio"]:checked,
+                    [type="radio"]:not(:checked) {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1000;
+                    }
+                    [type="radio"]:checked+.wpcf7-list-item-label,
+                    [type="radio"]:not(:checked)+.wpcf7-list-item-label {
+                        position: relative;
+                        padding-left: 26px;
+                        line-height: 20px;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-size: 1.6rem;
+                        @include mqSp {
+                            padding-left: 20px;
+                            font-size: 1.2rem;
+                            line-height: 1.3;
+                        }
+                    }
+                    [type="radio"]:checked+.wpcf7-list-item-label:before,
+                    [type="radio"]:not(:checked)+.wpcf7-list-item-label:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 16px;
+                        height: 16px;
+                        border: 1px solid #696a6c;
+                        border-radius: 100%;
+                        background: transparent;
+                        z-index: 100;
+                        @include mqSp() {
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+                    [type="radio"]:checked+.wpcf7-list-item-label:after,
+                    [type="radio"]:not(:checked)+.wpcf7-list-item-label:after {
+                        content: '';
+                        width: 8px;
+                        height: 8px;
+                        background: #696a6c;
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        border-radius: 100%;
+                        -webkit-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+                        z-index: 1000;
+                        @include mqSp() {
+                            width: 5px;
+                            height: 5px;
+                        }
+                    }
+                    [type="radio"]:not(:checked)+.wpcf7-list-item-label:after {
+                        opacity: 0;
+                        -webkit-transform: scale(0);
+                        transform: scale(0);
+                    }
+                    [type="radio"]:checked+.wpcf7-list-item-label:after {
+                        opacity: 1;
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                    .wpcf7-list-item {
+                        width: 33%;
+                        margin: 0 0 25px 0;
+                        position: relative;
+                        @include mqSp {
+                            width: 45%;
+                            margin: 0 0 15px 0;
+                            &:nth-child(even) {
+                                margin-left: 10%;
+                            }
+                        }
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 365px;
+                        border: 1px solid #696a6c;
+                        padding: 14px 10px;
+                        box-sizing: border-box;
+                        background-color: transparent;
+                        font-size: 16px;
+                        font-size: 1.6rem;
+                        color: #696a6c;
+                        line-height: 2;
+                        border-radius: 0;
+                        @include mqSp() {
+                            line-height: 2;
+                        }
+                        &::placeholder {
+                            color: #696a6c;
+                            opacity: 1;
+                        }
+                        &::-ms-input-placeholder {
+                            color: #696a6c;
+                        }
+                        &::-ms-input-placeholder {
+                            color: #696a6c;
+                        }
+                    }
+                }
+                .submit-btn {
+                    width: 100%;
+                    max-width: 415px;
+                    margin: 0 auto 40px;
+                    border-radius: 0;
+                    @include mqSp {
+                        margin: 0 auto 20px;
+                    }
+                    input[type="submit"] {
+                        width: 100%;
+                        height: 77px;
+                        margin: 0 auto;
+                        background-color: #f6f6f6;
+                        border: 1px solid #696a6c;
+                        color: #696a6c;
+                        font-size: 17px;
+                        font-size: 1.7rem;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        box-shadow: 6px 6px 0px #696a6c;
+                        transition: .5s;
+                        -webkit-transition: .5s;
+                        -moz-transition: .5s;
+                        -ms-transition: .5s;
+                        -o-transition: .5s;
+                        font-family: kozuka-gothic-pro, sans-serif;
+                        font-weight: 500;
+                        letter-spacing: 0.1em;
+                        border-radius: 0;
+                        @include mqSp {
+                            display: block;
+                            width: 75%;
+                            height: 40px;
+                            font-size: 1.2rem;
+                            box-shadow: 3px 3px 0px #696a6c;
+                        }
+                        &:hover {
+                            box-shadow: 0px 0px 0px #696a6c;
+                        }
+                    }
+                }
+                .last-text {
+                    width: 90%;
+                    max-width: 600px;
+                    margin: 0 auto;
+                    font-size: 14px;
+                    font-size: 1.4rem;
+                    text-align: left;
+                    letter-spacing: 0.05em;
+                    line-height: 2.2;
+                    @include mqSp() {
+                        width: 100%;
+                        font-size: 1.1rem;
+                        line-height: 2.0;
+                        letter-spacing: 0.04em;
+                    }
+                }
+                .wpcf7-spinner {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

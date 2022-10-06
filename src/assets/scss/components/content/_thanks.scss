@@ -1,0 +1,123 @@
+.sl {
+    &-thanks {
+        padding: 150px 0 0;
+
+        @include mqSp {
+            padding: 90px 0 0;
+        }
+
+        &-inn {
+            @include mqSp {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .cTitle.sub-cTitle h2 {
+                @include mqSp {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .thanks-inner {
+            width: 90%;
+            max-width: 1080px;
+            margin: 100px auto 0;
+
+            @include mqSp {
+                width: 100%;
+                margin: 50px auto 0;
+            }
+
+            .talent-name {
+                text-align: center;
+
+                h3 {
+                    font-size: 50px;
+                    font-size: 5.0rem;
+                    width: 90%;
+                    max-width: 1080px;
+                    margin: 0 auto;
+
+                    @include mqSp {
+                        font-size: 2.5rem;
+                        font-weight: 300;
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 21px;
+                    font-size: 2.1rem;
+                    line-height: 2;
+                    letter-spacing: 0.02em;
+
+                    @include mqSp {
+                        font-size: 1.1rem;
+                        margin-top: 5px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        border-bottom: 1px solid #696a6c;
+                    }
+                }
+            }
+
+            .thanks-text {
+                width: 100%;
+                max-width: 600px;
+                margin: 145px auto 0;
+                font-size: 14px;
+                font-size: 1.4rem;
+                text-align: left;
+                letter-spacing: 0.05em;
+                line-height: 2.2;
+
+                @include mqSp {
+                    font-size: 1.2rem;
+                    margin: 30px auto 0;
+                }
+            }
+
+            .thanks-link {
+                width: 90%;
+                max-width: 415px;
+                margin: 0 auto;
+
+                a {
+                    display: block;
+                    padding: 29px 0;
+                    margin: 100px auto 0;
+                    background-color: transparent;
+                    border: 1px solid #696a6c;
+                    color: #696a6c;
+                    font-size: 16px;
+                    font-size: 1.6rem;
+                    box-shadow: 6px 6px 0px #696a6c;
+                    transition: .5s;
+                    -webkit-transition: .5s;
+                    -moz-transition: .5s;
+                    -ms-transition: .5s;
+                    -o-transition: .5s;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+
+                    @include mqSp {
+                        display: block;
+                        width: 80%;
+                        padding: 12px 0;
+                        font-size: 1.2rem;
+                        margin: 50px auto 0;
+                        border: 1px solid #696a6c;
+                        box-shadow: 3px 3px 0px #696a6c;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 0px 0px #696a6c;
+                    }
+                }
+            }
+        }
+    }
+}

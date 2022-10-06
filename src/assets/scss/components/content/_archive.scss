@@ -1,0 +1,160 @@
+.archive.tax-talent_tag {
+    .page-header{
+        width: 80%;
+        margin: 0 auto;
+        padding: 70px 0 50px;
+        font-size: 5.0rem;
+        @include mqSp {
+            font-size: 3.0rem;
+        }
+    }
+    article {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        .post-img {
+            max-width: 500px;
+        }
+        h2 {
+            padding: 20px 0;
+            color: #fff;
+            font-size: 3.5rem;
+            letter-spacing: 0.1em;
+        }
+        p {
+            font-size: 1.6rem;
+            color: #fff;
+            letter-spacing: 0.05em;
+        }
+    }
+    .social-list {
+        margin-top: 40px;
+        flex-flow: nowrap;
+        margin-bottom: 70px;
+        @include mqSp {
+            width: 100%;
+            margin: 30px auto;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            width: 14%;
+            max-width: 60px;
+            height: 60px;
+            border: 2px solid #fff;
+            background-color: transparent;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            @include mqSp {
+                width: 14%;
+                max-width: 35px;
+                height: 35px;
+                margin-right: 5px;
+                border: 1px solid #fff;
+            }
+            &:hover {
+                background-color: #fff;
+                @include mqSp {
+                    background-color: transparent;
+                }
+                img {
+                    opacity: 0;
+                    @include mqSp {
+                        opacity: 1;
+                    }
+                    &.img-hover {
+                        opacity: 1;
+                        @include mqSp {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+            a {
+                display: block;
+                width: 60px;
+                position: relative;
+                transition: all .5s ease-in-out;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -ms-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                img {
+                    &.img-hover {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        opacity: 0;
+                        transition: all .5s ease-in-out;
+                        -webkit-transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                        -ms-transition: all .5s ease-in-out;
+                        -o-transition: all .5s ease-in-out;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        @include mqSp {
+                            transform: unset;
+                            -webkit-transform: unset;
+                            -moz-transform: unset;
+                            -ms-transform: unset;
+                            -o-transform: unset;
+                        }
+                    }
+                    &.home {
+                        height: 30px;
+                        @include mqSp {
+                            height: 17px;
+                        }
+                    }
+                    &.ig {
+                        height: 28px;
+                        @include mqSp {
+                            height: 15px;
+                        }
+                    }
+                    &.twt {
+                        height: 20px;
+                        @include mqSp {
+                            height: 13px;
+                        }
+                    }
+                    &.tik {
+                        height: 27px;
+                        @include mqSp {
+                            height: 15px;
+                        }
+                    }
+                    &.ytb {
+                        height: 22px;
+                        @include mqSp {
+                            height: 11px;
+                        }
+                    }
+                    &.sh {
+                        height: 23px;
+                        @include mqSp {
+                            height: 13px;
+                        }
+                    }
+                    &.note {
+                        height: 27px;
+                        @include mqSp {
+                            height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

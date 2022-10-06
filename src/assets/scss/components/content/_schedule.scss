@@ -1,0 +1,594 @@
+// for common use
+.schedule-details {
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #696a6c;
+    color: #696a6c;
+    @include mqSp {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    &:hover {
+        color: #696a6c;
+        .person-text {
+            background-color: #696a6c;
+            color: #fff;
+            @include mqSp {
+                background-color: #f6f6f6;
+                color: #696a6c;
+            }
+            .date {
+                border-bottom: 1px solid #fff;
+                @include mqSp {
+                    border-bottom: 1px solid #696a6c;
+                }
+            }
+            .tag-name {
+                span {
+                    background-color: #696a6c;
+                    color: #fff;
+                    @include mqSp {
+                        color: #696a6c;
+                        background: #f6f6f6;
+                    }
+                }
+            }
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        width: 99%;
+        height: 1px;
+        border-bottom: 1px solid #696a6c;
+        bottom: -7px;
+        right: -7px;
+        @include mqSp {
+            bottom: -5px;
+            right: -5px;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        border-right: 1px solid #696a6c;
+        top: 7px;
+        right: -7px;
+        @include mqSp {
+            top: 5px;
+            right: -5px;
+        }
+    }
+    .person-img {
+        width: 145px;
+        overflow: hidden;
+        figure {
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+                @include mqSp {
+                    width: 100px;
+                }
+            }
+        }
+        @include mqSp {
+            width: 100px;
+        }
+    }
+    .person-text {
+        width: calc(100% - 145px);
+        border-left: 1px solid #696a6c;
+        background-color: #fff;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        -ms-transition: all .4s;
+        -o-transition: all .4s;
+        @include mqSp {
+            width: calc(100% - 100px);
+        }
+        .date {
+            border-bottom: 1px solid #696a6c;
+            padding: 8px 13px;
+            font-size: 24px;
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            font-family: "Helvetica", sans-serif;
+            @include mqSp {
+                padding: 5px 10px;
+                font-size: 1.2rem;
+            }
+        }
+        .person-info {
+            margin-top: 5px;
+            padding-left: 13px;
+            line-height: 1.7;
+            @include mqSp {
+                padding-left: 10px;
+            }
+            .name {
+                display: block;
+                font-size: 16px;
+                font-size: 1.6rem;
+                letter-spacing: 0.05em;
+                @include mqSp {
+                    font-size: 1.0rem;
+                }
+            }
+            .info-text {
+                display: block;
+                font-size: 14px;
+                font-size: 1.4rem;
+                letter-spacing: 0.05em;
+                @include mqTab {
+                    font-size: 1.2rem;
+                }
+                @include mqSp {
+                    font-size: 1.0rem;
+                }
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+        .tag-name {
+            display: block;
+            padding-bottom: 9px;
+            margin-top: 17px;
+            margin-left: 13px;
+            @include mqSp {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            span {
+                display: inline-block;
+                padding: 5px 12px;
+                margin-right: 3px;
+                color: #fff;
+                background: #696a6c;
+                font-size: 8px;
+                font-size: 0.8rem;
+                letter-spacing: 0.2em;
+                box-sizing: border-box;
+                border-radius: 30px;
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                -ms-border-radius: 30px;
+                -o-border-radius: 30px;
+                text-transform: uppercase;
+                font-family: "Helvetica Neue", sans-serif;
+                box-shadow: 1px 1px 0px rgba($color: #000000, $alpha: 0.1);
+                @include mqSp() {
+                    padding: 3px 12px;
+                }
+            }
+        }
+    }
+}
+
+// sub page post
+.sl {
+    &-schedule {
+        @include mqSp {
+            padding: 50px 0 0;
+        }
+        &-inn {
+            &-content {
+                margin-top: 80px;
+                @include mqSp {
+                    margin-top: 20px;
+                }
+                .talent-name {
+                    margin: 35px 0 60px;
+                    @include mqSp {
+                        margin: 20px 0 30px;
+                    }
+                    h3 {
+                        font-size: 5.0rem;
+                        text-align: center;
+                        width: 90%;
+                        max-width: 1080px;
+                        margin: 0 auto;
+                        @include mqSp {
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+            &-list {
+                width: 920px;
+                overflow: auto;
+                position: relative;
+                margin: 30px auto 0;
+                padding-bottom: 5px;
+                // flex-flow: nowrap;
+                z-index: 9;
+                @include mqSp {
+                    width: 90%;
+                    margin: 20px auto;
+                    flex-flow: wrap;
+                }
+                li {
+                    margin-right: 22px;
+                    margin-bottom: 10px;
+                    @include mqSp {
+                        width: 31%;
+                        margin-right: 3%;
+                        margin-bottom: 10px;
+                    }
+                    &:nth-child(3n+3) {
+                        @include mqSp {
+                            margin-right: 0px;
+                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        color: #696a6c;
+                        background-color: #f6f6f6;
+                        transition: all .5s ease-in-out;
+                        -webkit-transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                        -ms-transition: all .5s ease-in-out;
+                        -o-transition: all .5s ease-in-out;
+                        @include mqSp {
+                            display: block;
+                        }
+                        &.is-selected {
+                            span {
+                                color: #696a6c;
+                                background-color: #f6f6f6;
+                            }
+                        }
+                        &:hover {
+                            span {
+                                color: #fff;
+                                background-color: #696a6c;
+                                @include mqSp() {
+                                    color: #696a6c;
+                                    background-color: #f6f6f6;
+                                }
+                            }
+                        }
+                    }
+                    span {
+                        display: block;
+                        width: 92px;
+                        padding: 6px 5px 5px 5px;
+                        border: 1.5px solid #696a6c;
+                        font-size: 8px;
+                        font-size: 0.8rem;
+                        letter-spacing: 0.2em;
+                        font-family: "Helvetica", sans-serif;
+                        border-radius: 30px;
+                        -webkit-border-radius: 30px;
+                        -moz-border-radius: 30px;
+                        -ms-border-radius: 30px;
+                        -o-border-radius: 30px;
+                        text-align: center;
+                        transition: all .5s ease-in-out;
+                        -webkit-transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                        -ms-transition: all .5s ease-in-out;
+                        -o-transition: all .5s ease-in-out;
+                        text-transform: uppercase;
+                        @include mqSp {
+                            display: block;
+                            width: 100%;
+                            border: 1px solid #696a6c;
+                        }
+                    }
+                }
+            }
+            &-posts {
+                width: 90%;
+                max-width: 960px;
+                margin: 0 auto;
+                padding-top: 70px;
+                justify-content: space-between;
+                @include mqSp {
+                    padding-top: 5px;
+                }
+                .schedule-details {
+                    @include mqSp {
+                        width: 100%;
+                    }
+                }
+                article {
+                    width: 44.8%;
+                    @include mqSp {
+                        width: 100%;
+                    }
+                    &:nth-child(4n-1) {
+                        margin-left: 80px;
+                        @include mqTab {
+                            margin-left: 40px;
+                        }
+                        @include mqSp {
+                            margin-left: 0;
+                        }
+                    }
+                    &:nth-child(4n-2) {
+                        margin-right: 80px;
+                        @include mqTab {
+                            margin-right: 40px;
+                        }
+                        @include mqSp {
+                            margin-right: 0;
+                        }
+                    }
+                    .person-img {
+                        img {
+                            width: 145px;
+                            max-width: 145px;
+                            height: 145px;
+                            object-fit: cover;
+                            @include mqSp {
+                                width: 100%;
+                                max-width: 100%;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-detail {
+                width: 90%;
+                max-width: 1080px;
+                margin: 80px auto 0;
+                @include mqSp {
+                    margin: 30px auto 0;
+                }
+                .image {
+                    width: 100%;
+                    border: 1px solid #696a6c;
+                    text-align: center;
+                    position: relative;
+                    max-height: 590px;
+                    height: 45vw;
+                    @include mqSp() {
+                        height: 75vw;
+                    }
+                    &:after {
+                        content: "";
+                        width: 98%;
+                        position: absolute;
+                        bottom: -14px;
+                        left: 1%;
+                        border-bottom: 13px solid #696a6c;
+                        z-index: -1;
+                        @include mqSp {
+                            bottom: -5px;
+                            border-bottom: 4px solid #696a6c;
+                        }
+                    }
+                    img {
+                        max-width: 100%;
+                        height: 100%;
+                        width: auto;
+                        @include mqSp() {
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .content {
+                    padding: 70px 50px 40px;
+                    box-sizing: border-box;
+                    @include mqSp {
+                        padding: 45px 0 0;
+                    }
+                    .ttl-time {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 80px;
+                        @include mqSp {
+                            display: block;
+                            margin-bottom: 0;
+                        }
+                        .date-tag {
+                            width: 18%;
+                            @include mqSp {
+                                display: flex;
+                                flex-flow: nowrap;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding-bottom: 7px;
+                                border-bottom: 1px solid #696a6c;
+                                width: 100%;
+                            }
+                            .post-title {
+                                @include mqSp {
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                        .tag-name {
+                            margin-top: 20px;
+                            @include mqSp {
+                                margin-top: 0;
+                            }
+                            span {
+                                display: inline-block;
+                                border: 1px solid #696a6c;
+                                padding: 9px 17px;
+                                font-size: 14px;
+                                font-size: 1.4rem;
+                                font-family: "Helvetica", sans-serif;
+                                letter-spacing: 0.2em;
+                                text-transform: uppercase;
+                                border-radius: 50px;
+                                -webkit-border-radius: 50px;
+                                -moz-border-radius: 50px;
+                                -ms-border-radius: 50px;
+                                -o-border-radius: 50px;
+                                @include mqSp {
+                                    padding: 4px 15px;
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                        time {
+                            font-size: 23px;
+                            font-size: 2.3rem;
+                            line-height: 1;
+                            color: #696a6c;
+                            letter-spacing: 0.075em;
+                            font-family: "Helvetica", sans-serif;
+                            font-weight: 600;
+                            @include mqSp {
+                                margin-right: 0;
+                                font-size: 1.5rem;
+                            }
+                        }
+                        h2 {
+                            width: 84%;
+                            font-size: 25px;
+                            font-size: 2.5rem;
+                            color: #696a6c;
+                            letter-spacing: 0.075em;
+                            line-height: 2;
+                            padding: 35px 0 35px 3%;
+                            border-left: 2px solid #696a6c;
+                            font-family: "hiragino-kaku-gothic-pro", sans-serif;
+                            @include mqSp {
+                                width: 100%;
+                                font-size: 1.4rem;
+                                font-weight: 600;
+                                letter-spacing: 0.01em;
+                                border-left: none;
+                                padding: 20px 0 10px;
+                                line-height: 1.7;
+                            }
+                        }
+                    }
+                    .date {
+                        margin: 20px 0 40px;
+                        position: relative;
+                        @include mqSp {
+                            margin: 10px 0 20px;
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 88%;
+                            height: 1px;
+                            top: 50%;
+                            left: 0;
+                            background: #696a6c;
+                            transform: translateY(-50%);
+                            -webkit-transform: translateY(-50%);
+                            -moz-transform: translateY(-50%);
+                            -ms-transform: translateY(-50%);
+                            -o-transform: translateY(-50%);
+                            @include mqSp {
+                                width: 80%;
+                            }
+                        }
+                        span {
+                            display: block;
+                            text-align: right;
+                            color: #696a6c;
+                            font-size: 1.2rem;
+                            letter-spacing: 0.2em;
+                            font-family: "Helvetica", sans-serif;
+                            @include mqSp {
+                                letter-spacing: 0.1em;
+                                font-size: 1.0rem;
+                            }
+                        }
+                    }
+                    .description {
+                        color: #696a6c;
+                        margin-bottom: 100px;
+                        font-family: yu-gothic-pr6n, sans-serif;
+                        @include mqSp {
+                            margin: 20px 0 40px 0;
+                        }
+                        p {
+                            font-size: 18px;
+                            font-size: 1.8rem;
+                            letter-spacing: 0em;
+                            line-height: 2.2;
+                            margin-bottom: 20px;
+                            font-family: "游ゴシック体", "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", YuGothic, "メイリオ", Meiryo, sans-serif;
+                            @include mqSp {
+                                font-size: 1.2rem;
+                                margin-bottom: 10px;
+                                line-height: 2.3;
+                            }
+                            img {
+                                width: 100%;
+                                max-width: 716px;
+                                margin: 40px auto;
+                                display: block;
+                                @include mqSp {
+                                    margin: 20px auto;
+                                }
+                            }
+                        }
+                    }
+                    .custom-link {
+                        margin-bottom: 25px;
+                        @include mqSp {
+                            margin-bottom: 10px;
+                        }
+                        a {
+                            color: #696a6c;
+                            letter-spacing: 0.01em;
+                            line-height: 1.6;
+                            display: inline-block;
+                            position: relative;
+                            padding-left: 32px;
+                            font-size: 2.0rem;
+                            font-weight: 600;
+                            font-family: "游ゴシック体", "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", YuGothic, "メイリオ", Meiryo, sans-serif;
+                            @include mqSp {
+                                font-size: 1.3rem;
+                                letter-spacing: 0.01em;
+                                padding-left: 27px;
+                            }
+                            &:before {
+                                content: "";
+                                width: 22px;
+                                height: 22px;
+                                background: url('../img/link-icon.svg')no-repeat;
+                                position: absolute;
+                                top: 6px;
+                                left: 0;
+                                transition: 0.5s;
+                                @include mqSp {
+                                    width: 16px;
+                                    height: 16px;
+                                    top: 2px;
+                                }
+                            }
+                            &:hover {
+                                color: #696a6c;
+                                &::before {
+                                    background: url('../img/link-icon.svg')no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagination {
+        margin-top: 100px;
+        @include mqSp {
+            margin-top: 60px;
+        }
+    }
+}
