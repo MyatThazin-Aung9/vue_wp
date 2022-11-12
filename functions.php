@@ -17,12 +17,5 @@ function load_vue_scripts() {
 		filemtime( get_stylesheet_directory() . '/dist/scripts/index.js' ),
 		true
 	);
-
-	// wp_enqueue_style(
-	// 	'vuejs-wordpress-theme-starter-css',
-	// 	get_stylesheet_directory_uri() . '/dist/styles.css',
-	// 	null,
-	// 	filemtime( get_stylesheet_directory() . '/dist/styles.css' )
-	// );
 }
 add_action( 'wp_enqueue_scripts', 'load_vue_scripts', 100 );
